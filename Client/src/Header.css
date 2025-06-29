@@ -1,0 +1,38 @@
+.link{
+    text-decoration: none;
+}
+
+.header{
+    display:flex;
+    justify-content: space-between;
+    margin:0px;
+
+}
+
+ul{
+    list-style: none;
+    display:flex;
+   
+}
+ 
+ul li{
+    margin-left:50px;
+    margin-top:0px;
+}
+
+#Logo{
+    font-size:36px;
+    font-style: italic;
+}
+
+.icons{
+   
+    width:450px;
+    height:80px;
+}
+
+li .link{
+    font-size: 15px;
+    font-style: italic;
+    
+}

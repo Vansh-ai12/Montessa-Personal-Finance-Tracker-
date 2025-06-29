@@ -1,0 +1,59 @@
+#user{
+    margin-top:50px;
+}
+
+#pass{
+    margin-top:50px;
+}
+
+.losi{
+    width:300px;
+    margin-left:50px;
+    height:30px;
+    border:2px solid #B68D40;
+    text-align: center;
+    padding:5px;
+    font-size:20px;
+    font-style:bold;
+}
+
+.Log-sign{
+    height:450px;
+    width:400px;
+    border:2px solid #B68D40;
+}
+
+#login{
+    display:flex;
+    justify-content: center;
+    margin-top:30px;
+    font-style: italic;
+}
+
+#btnC{
+    display:flex;
+    justify-content: center;
+    margin-top:50px;
+}
+
+#btn{
+    width:100px;
+    height:30px;
+    border:2px solid #B68D40;
+    font-size:15px;
+    
+}
+#btn:hover{
+    background-color: #D6AD60;
+}
+
+
+#signupform{
+    height:500px;
+}
+
+body {
+  background-color: #f4f6f8;
+  color: #333; 
+  font-family: 'Inter', sans-serif;
+}
