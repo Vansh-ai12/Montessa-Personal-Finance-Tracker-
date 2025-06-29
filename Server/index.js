@@ -4,6 +4,8 @@ const cookieParser =  require("cookie-parser");
 
 const express =  require("express");
 
+const PORT = process.env.PORT || 3000;
+
 const cors = require("cors");
 
 const checkRoute = require("./Routes/check")
@@ -58,6 +60,6 @@ app.use("/api/login", logRoute);
 
 app.use("/api/data",dataRoute)
 
-app.listen(3000, () => {
+app.listen(PORT, () => {
     console.log("Server running on port 3000");
 });
