@@ -45,7 +45,7 @@ app.use(checkForAuthentication);
 
 
 
-mongoose.connect('mongodb://127.0.0.1:27017/Finance_Tracker')
+mongoose.connect(process.env.MONGO_URL || 'mongodb://127.0.0.1:27017/Finance_Tracker')
 .then(() => console.log("MongoDB Connected"))
 .catch((err) => console.log("Mongo Error", err));
 

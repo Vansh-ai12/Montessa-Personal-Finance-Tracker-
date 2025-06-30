@@ -13,7 +13,7 @@ function Add() {
     event.preventDefault();
 
     try {
-      const url = "http://localhost:3000/api/add";
+      const url = import.meta.env.VITE_ADD_URL;
       let response = await fetch(url, {
         method: "Post",
         credentials: "include",

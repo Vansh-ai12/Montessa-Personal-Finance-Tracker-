@@ -9,7 +9,7 @@ function SignUp() {
 
   async function storeDetails(event) {
     event.preventDefault();
-    const url = "http://localhost:3000/api/users";
+    const url =import.meta.env.VITE_USERS_URL;
     let response = await fetch(url, {
       method: "Post",
       headers: {

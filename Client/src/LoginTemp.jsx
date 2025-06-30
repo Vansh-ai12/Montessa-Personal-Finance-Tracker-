@@ -6,7 +6,7 @@ function Login() {
 
   async function onLogin(event){
     event.preventDefault();
-    const url = "http://localhost:3000/api/login";
+    const url = import.meta.env.VITE_LOGIN_URL;
     let response =await fetch(url,{
       method:"Post",
       headers:{

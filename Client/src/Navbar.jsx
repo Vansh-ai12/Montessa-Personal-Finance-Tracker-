@@ -2,12 +2,12 @@ import {Link} from "react-router";
 import "./Header.css"
 import { useState ,useEffect} from "react";
 import AfterLogin from "./AfterLogin";
-import BeforeLogin from "./beforeLogin";
+import BeforeLogin from "./Blogin";
 function Navbar(){
     const [iconShow,setIconShow] = useState(false)
    
     async function checkLogin(){
-            try{const res = await fetch("http://localhost:3000/api/check",{
+            try{const res = await fetch(import.meta.env.VITE_CHECK_URL,{
                 credentials:"include"
             })
             const data = await res.json();

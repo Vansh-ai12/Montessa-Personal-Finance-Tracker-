@@ -11,7 +11,7 @@ export default function DashBoard() {
  
   const fetchTransactions = async () => {
     try {
-      const res = await fetch("http://localhost:3000/api/data", {
+      const res = await fetch(import.meta.env.VITE_DATA_URL, {
         credentials: "include",
       });
       const data = await res.json();

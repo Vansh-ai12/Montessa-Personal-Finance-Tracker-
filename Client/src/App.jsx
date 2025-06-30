@@ -1,7 +1,7 @@
 import Add from "./Add";
 import DashBoard from "./DashBoard";
 import Home from "./Home";
-import Login from "./login";
+import Login from "./LoginTemp"
 import Navbar from "./Navbar";
 import { Route,Routes } from "react-router";
 import SignUp from "./SignUp";

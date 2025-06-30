@@ -3,7 +3,7 @@ function AfterLogin() {
   const navigate = useNavigate();
   async function handleLogout() {
     try {
-      await fetch("http://localhost:3000/api/logout", {
+      await fetch(import.meta.env.VITE_LOGOUT_URL, {
         method: "Post",
         credentials: "include",
       });
