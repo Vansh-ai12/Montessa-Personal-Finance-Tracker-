@@ -21,7 +21,7 @@ const {checkForAuthentication} = require("./Middlewares/auth")
 const userRoute = require("./Routes/User");
 
 const logRoute = require("./Routes/Login");
-const { data } = require("react-router");
+
 app.use(cors({
     origin:"http://localhost:5173",
     credentials: true
