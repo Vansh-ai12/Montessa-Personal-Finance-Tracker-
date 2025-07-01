@@ -23,7 +23,10 @@ const userRoute = require("./Routes/User");
 const logRoute = require("./Routes/Login");
 
 app.use(cors({
-    origin:"http://localhost:5173",
+    origin: [
+    "http://localhost:5173", 
+    "https://montessa-personal-finance-tracker.vercel.app"
+    ],
     credentials: true
 }))
 app.use(cookieParser());
