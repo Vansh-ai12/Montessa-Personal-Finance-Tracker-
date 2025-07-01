@@ -31,7 +31,11 @@ app.use(cors({
 }))
 app.use(cookieParser());
 app.post("/api/logout",(req,res)=>{
-    res.clearCookie("token");
+    res.clearCookie("token",{
+        httpOnly: true,
+        secure: true,
+        sameSite: "None"
+    );
     req.session = null;
     res.json({message:"Logged Out"});
 })
